@@ -40,19 +40,19 @@ export const timeline = [
     description: "Live diária às 18h, direto da Entity com o chat.",
   },
   {
-    year: "5K+",
+    year: "6K+",
     title: "Horas de jogo em DBD",
-    description: "Mais de 5 mil horas dedicadas a Dead by Daylight.",
+    description: "Mais de 6 mil horas dedicadas a Dead by Daylight.",
   },
   {
     year: "SWF",
     title: "Joga em squad",
-    description: "Streams constantes jogando Survive With Friends.",
+    description: "Streams constantes jogando WIN Streak.",
   },
   {
     year: "BoT",
     title: "Beasts of Tomorrow",
-    description: "Faz parte da squad/comunidade Beasts of Tomorrow.",
+    description: "Dono do Beasts of Tomorrow.",
   },
 ];
 

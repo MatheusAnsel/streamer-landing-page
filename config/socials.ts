@@ -76,7 +76,7 @@ export const supportLinks = {
     label: "PIX",
     description: "Apoie direto com uma chave PIX",
     // Troque pela chave PIX real (e-mail, telefone ou chave aleatória)
-    pixKey: "jotajogadbd@pix.com",
+    pixKey: "https://livepix.gg/jotajogadbd",
   },
   subs: {
     label: "Assinatura Twitch",
@@ -85,8 +85,8 @@ export const supportLinks = {
   },
   donation: {
     label: "Doação",
-    description: "Contribua com qualquer valor via Streamlabs",
-    url: "https://streamlabs.com/jotajogadbd/tip",
+    description: "Contribua com qualquer valor via LivePix",
+    url: "https://livepix.gg/jotajogadbd",
   },
   wishlist: {
     label: "Wishlist",
