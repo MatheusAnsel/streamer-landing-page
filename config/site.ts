@@ -27,17 +27,17 @@ export const siteConfig = {
 /** Seção de Estatísticas — dados reais do canal na Twitch, troque conforme forem crescendo */
 export const stats = [
   { label: "Seguidores", value: 3_100, suffix: "+" },
-  { label: "Horas de Jogo em DBD", value: 5_000, suffix: "+" },
-  { label: "Pico de Espectadores", value: 98, suffix: "" },
+  { label: "Horas de Jogo em DBD", value: 6_000, suffix: "+" },
+  { label: "Pico de Espectadores", value: 208, suffix: "" },
   { label: "Lives por Semana", value: 7, suffix: "" },
 ];
 
 /** Seção Sobre — destaques reais do canal (em vez de uma linha do tempo fictícia) */
 export const timeline = [
   {
-    year: "18H",
+    year: "12H",
     title: "Ao vivo todos os dias",
-    description: "Live diária às 18h, direto da Entity com o chat.",
+    description: "Live diária às 12h, direto da Entity com o chat.",
   },
   {
     year: "6K+",
