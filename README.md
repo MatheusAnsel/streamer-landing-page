@@ -1,7 +1,21 @@
+<div align="center">
+
 # JotaJogaDBD — Site Oficial
 
-Site institucional/gamer para o streamer de Dead by Daylight **JotaJogaDBD**,
-construído com Next.js 15 (App Router), TailwindCSS e Framer Motion.
+**Projeto real, entregue a cliente**: landing page institucional para o streamer de Dead by Daylight **JotaJogaDBD**, construída em colaboração com Marina Barbs.
+
+[![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=next.js&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](#)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)](#)
+
+</div>
+
+---
+
+Construído com Next.js 15 (App Router), TailwindCSS e Framer Motion, com foco em uma arquitetura que o próprio cliente conseguisse manter sem depender de programador para trocar um link ou uma imagem — todo o conteúdo editável foi isolado em `/config` (veja a seção abaixo).
+
 
 ## Rodando localmente
 
@@ -62,3 +76,11 @@ As imagens em `/public` (hero, foto "sobre", capas de conteúdo e thumbnails de
 clipes) são placeholders gerados automaticamente. Basta substituir os arquivos
 pelos originais mantendo os mesmos nomes — os componentes não precisam de
 nenhuma alteração.
+
+## Créditos
+
+Desenvolvido por **Matheus Ansel** em colaboração com **Marina Barbs**.
+
+- GitHub: [@MatheusAnsel](https://github.com/MatheusAnsel)
+- LinkedIn: [linkedin.com/in/matheusansel](https://linkedin.com/in/matheusansel)
+
