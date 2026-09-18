@@ -26,7 +26,7 @@ npm run dev
 
 Abra http://localhost:3000
 
-## ⚙️ Onde editar as coisas (a parte mais importante)
+## Onde editar as coisas (a parte mais importante)
 
 **Toda edição do dia a dia acontece na pasta `/config`.** Nada de link ou texto
 está "hardcoded" dentro dos componentes — veja `config/README.md` para o guia
@@ -51,7 +51,7 @@ completo, mas em resumo:
 /components
   /ui                 Componentes reutilizáveis (Button, SectionHeading, Cursor...)
   /sections           Uma seção do site por arquivo (Hero, Stats, About...)
-/config               ⭐ TODOS os links e conteúdos editáveis do site
+/config               TODOS os links e conteúdos editáveis do site
 /hooks                Hooks customizados (ex.: contador animado das estatísticas)
 /lib                  Funções utilitárias
 /public               Imagens e assets estáticos
