@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qualidade:
+    name: Tipos e build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Nível crítico de propósito: ainda resta 1 aviso alto do postcss embutido no Next 15,
+      # cuja correção só vem com o Next 16 (mudança de versão maior).
+      - name: Auditar dependências de produção
+        run: npm audit --omit=dev --audit-level=critical
+
+      - name: Tipos
+        run: npm run typecheck
+
+      # O Next baixa as fontes (Google Fonts) durante o build, por isso precisa de internet.
+      - name: Build
+        run: npm run build

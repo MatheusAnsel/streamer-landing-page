@@ -6,6 +6,7 @@
 
 [![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=next.js&logoColor=white)](#)
 [![React](https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
+[![CI](https://github.com/MatheusAnsel/streamer-landing-page/actions/workflows/ci.yml/badge.svg)](https://github.com/MatheusAnsel/streamer-landing-page/actions/workflows/ci.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](#)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)](#)
