@@ -13,6 +13,8 @@
 
 </div>
 
+[Demo ao vivo](https://streamer-landing-page-sigma.vercel.app)
+
 ---
 
 Construído com Next.js 15 (App Router), TailwindCSS e Framer Motion, com foco em uma arquitetura que o próprio cliente conseguisse manter sem depender de programador para trocar um link ou uma imagem — todo o conteúdo editável foi isolado em `/config` (veja a seção abaixo).
@@ -26,6 +28,14 @@ npm run dev
 ```
 
 Abra http://localhost:3000
+
+Outros comandos: `npm run build` (build de produção), `npm run lint` e `npm run typecheck`.
+
+## Verificação automática (CI)
+
+O workflow em `.github/workflows/ci.yml` roda a cada push na `main` e em todo pull request: auditoria das
+dependências de produção (falha em vulnerabilidade crítica), verificação de tipos (`tsc --noEmit`) e build.
+O projeto não tem testes automatizados.
 
 ## Onde editar as coisas (a parte mais importante)
 
