@@ -15,6 +15,13 @@
 
 [Demo ao vivo](https://streamer-landing-page-sigma.vercel.app)
 
+## Telas
+
+| | |
+|---|---|
+| ![Seção inicial com título, chamadas para a live e para o Discord](docs/screenshots/home.png) | ![Seção de reações do streamer](docs/screenshots/reacoes.png) |
+| Seção inicial, com chamadas para assistir à live e entrar no Discord | Galeria de reações, alimentada por `/config` |
+
 ---
 
 Construído com Next.js 15 (App Router), TailwindCSS e Framer Motion, com foco em uma arquitetura que o próprio cliente conseguisse manter sem depender de programador para trocar um link ou uma imagem — todo o conteúdo editável foi isolado em `/config` (veja a seção abaixo).
