@@ -1,4 +1,3 @@
-import LoadingScreen from "@/components/ui/LoadingScreen";
 import Navbar from "@/components/sections/Navbar";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
@@ -14,7 +13,6 @@ import Footer from "@/components/sections/Footer";
 export default function Home() {
   return (
     <>
-      <LoadingScreen />
       <Navbar />
       <main id="main-content">
         <Hero />

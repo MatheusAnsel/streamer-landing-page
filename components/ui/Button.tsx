@@ -13,12 +13,12 @@ export default function Button({ href, children, variant = "primary", className 
   const isExternal = href.startsWith("http");
 
   const base =
-    "focus-ring inline-flex items-center justify-center gap-2 rounded-md px-7 py-3.5 font-body font-semibold text-sm tracking-wide transition-all duration-300 will-change-transform hover:-translate-y-0.5";
+    "focus-ring inline-flex items-center justify-center gap-2 rounded px-6 py-3 font-body text-sm font-semibold transition-colors";
 
   const styles =
     variant === "primary"
-      ? "bg-primary-gradient text-white shadow-glow hover:shadow-glow-lg"
-      : "border border-white/20 bg-white/5 text-white backdrop-blur hover:border-primary/60 hover:bg-primary/10";
+      ? "bg-primary text-black hover:bg-primary-hover"
+      : "border border-line text-foreground hover:border-muted";
 
   return (
     <Link
