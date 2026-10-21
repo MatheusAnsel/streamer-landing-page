@@ -36,7 +36,7 @@ npm run dev
 
 Abra http://localhost:3000
 
-Outros comandos: `npm run build` (build de produção), `npm run lint` e `npm run typecheck`.
+Outros comandos: `npm run build` (build de produção) e `npm run typecheck`.
 
 ## Verificação automática (CI)
 
@@ -52,14 +52,15 @@ completo, mas em resumo:
 
 | Quero mudar... | Arquivo |
 |---|---|
-| Link da Twitch, YouTube, Discord, Instagram, TikTok, X | `config/socials.ts` |
-| Chave PIX, link de doação, link da wishlist | `config/socials.ts` |
+| Link da Twitch, YouTube, Discord, Instagram, TikTok, grupo do WhatsApp | `config/socials.ts` |
+| PIX, assinatura e link de doação (seção Apoie) | `config/socials.ts` |
 | Nome, tagline, textos de SEO | `config/site.ts` |
 | Números de seguidores/horas de live/partidas | `config/site.ts` → `stats` |
-| Timeline da seção Sobre | `config/site.ts` → `timeline` |
+| Destaques da seção Sobre | `config/site.ts` → `timeline` |
 | Cards da seção Conteúdos | `config/site.ts` → `contentCategories` |
 | Clipes do carrossel | `config/site.ts` → `clips` |
 | Próximas lives (Agenda) | `config/site.ts` → `schedule` |
+| Galeria de Reações | `config/site.ts` → `reactions` |
 | Imagens (hero, foto, thumbnails) | arquivos em `/public` |
 
 ## Estrutura de pastas
@@ -67,7 +68,7 @@ completo, mas em resumo:
 ```
 /app                  Rotas do Next.js (App Router), layout, SEO (sitemap/robots)
 /components
-  /ui                 Componentes reutilizáveis (Button, SectionHeading, Cursor...)
+  /ui                 Componentes reutilizáveis (Button, SectionHeading, LoadingScreen)
   /sections           Uma seção do site por arquivo (Hero, Stats, About...)
 /config               TODOS os links e conteúdos editáveis do site
 /hooks                Hooks customizados (ex.: contador animado das estatísticas)
@@ -77,7 +78,7 @@ completo, mas em resumo:
 
 ## Seções implementadas
 
-Navbar · Hero · Estatísticas · Sobre (timeline) · Conteúdos · Clipes (carrossel)
+Navbar · Hero · Estatísticas · Sobre · Conteúdos · Clipes (carrossel) · Reações
 · Agenda · Comunidade · Apoie · Footer — nessa ordem, seguindo o briefing.
 
 ## Stack
@@ -88,12 +89,12 @@ Navbar · Hero · Estatísticas · Sobre (timeline) · Conteúdos · Clipes (car
 - Framer Motion (scroll reveals, hover 3D, loading screen)
 - lucide-react (ícones)
 
-## Imagens placeholder
+## Imagens
 
-As imagens em `/public` (hero, foto "sobre", capas de conteúdo e thumbnails de
-clipes) são placeholders gerados automaticamente. Basta substituir os arquivos
-pelos originais mantendo os mesmos nomes — os componentes não precisam de
-nenhuma alteração.
+As fotos do streamer em `/public/photos` (hero, seção Sobre e galeria de Reações) são
+fotos reais enviadas pelo cliente, com o fundo removido. As capas dos cards de Conteúdos
+ficam em `/public/content`. Para trocar qualquer imagem, basta substituir o arquivo
+mantendo o mesmo nome — nenhum componente precisa ser alterado.
 
 ## Créditos
 

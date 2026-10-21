@@ -14,7 +14,7 @@ export const siteConfig = {
     title: "JotaJogaDBD — Streamer de Dead by Daylight",
     description:
       "Acompanhe jotajogadbd_ ao vivo jogando Dead by Daylight, todos os dias às 18h. Mais de 5 mil horas de jogo, SWF e parte da squad Beasts of Tomorrow.",
-    url: "https://jotajogadbd.com",
+    url: "https://streamer-landing-page-sigma.vercel.app",
     ogImage: "/og-image.jpg",
   },
   hero: {

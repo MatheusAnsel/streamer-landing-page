@@ -75,7 +75,7 @@ export const supportLinks = {
   pix: {
     label: "PIX",
     description: "Apoie direto com uma chave PIX",
-    // Troque pela chave PIX real (e-mail, telefone ou chave aleatória)
+    // Texto exibido no card (hoje aponta para o LivePix do canal)
     pixKey: "https://livepix.gg/jotajogadbd",
   },
   subs: {
@@ -87,11 +87,6 @@ export const supportLinks = {
     label: "Doação",
     description: "Contribua com qualquer valor via LivePix",
     url: "https://livepix.gg/jotajogadbd",
-  },
-  wishlist: {
-    label: "Wishlist",
-    description: "Presenteie o setup do streamer",
-    url: "https://amazon.com.br/hz/wishlist/ls/JOTAJOGADBD",
   },
 };
 

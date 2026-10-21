@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Gift, Heart, Sparkles, QrCode } from "lucide-react";
+import { Heart, Sparkles, QrCode } from "lucide-react";
 import { supportLinks } from "@/config/socials";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
@@ -10,7 +10,6 @@ const cards = [
   { ...supportLinks.pix, icon: QrCode },
   { ...supportLinks.subs, icon: Sparkles },
   { ...supportLinks.donation, icon: Heart },
-  { ...supportLinks.wishlist, icon: Gift },
 ];
 
 export default function Support() {
@@ -21,7 +20,7 @@ export default function Support() {
       <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeading eyebrow="Faça parte" title="Apoie o Canal" />
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card, i) => (
             <motion.div
               key={card.label}
