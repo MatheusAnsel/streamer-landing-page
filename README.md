@@ -9,7 +9,6 @@
 [![CI](https://github.com/MatheusAnsel/streamer-landing-page/actions/workflows/ci.yml/badge.svg)](https://github.com/MatheusAnsel/streamer-landing-page/actions/workflows/ci.yml)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](#)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](#)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)](#)
 
 </div>
 
@@ -24,7 +23,7 @@
 
 ---
 
-Construído com Next.js 15 (App Router), TailwindCSS e Framer Motion, com foco em uma arquitetura que o próprio cliente conseguisse manter sem depender de programador para trocar um link ou uma imagem — todo o conteúdo editável foi isolado em `/config` (veja a seção abaixo).
+Construído com Next.js 15 (App Router), e TailwindCSS, com foco em uma arquitetura que o próprio cliente conseguisse manter sem depender de programador para trocar um link ou uma imagem — todo o conteúdo editável foi isolado em `/config` (veja a seção abaixo).
 
 
 ## Rodando localmente
@@ -53,7 +52,7 @@ completo, mas em resumo:
 | Quero mudar... | Arquivo |
 |---|---|
 | Link da Twitch, YouTube, Discord, Instagram, TikTok, grupo do WhatsApp | `config/socials.ts` |
-| PIX, assinatura e link de doação (seção Apoie) | `config/socials.ts` |
+| Assinatura e PIX/doação via LivePix (seção Apoie) | `config/socials.ts` |
 | Nome, tagline, textos de SEO | `config/site.ts` |
 | Números de seguidores/horas de live/partidas | `config/site.ts` → `stats` |
 | Destaques da seção Sobre | `config/site.ts` → `timeline` |
@@ -68,7 +67,7 @@ completo, mas em resumo:
 ```
 /app                  Rotas do Next.js (App Router), layout, SEO (sitemap/robots)
 /components
-  /ui                 Componentes reutilizáveis (Button, SectionHeading, LoadingScreen)
+  /ui                 Componentes reutilizáveis (Button, SectionHeading)
   /sections           Uma seção do site por arquivo (Hero, Stats, About...)
 /config               TODOS os links e conteúdos editáveis do site
 /hooks                Hooks customizados (ex.: contador animado das estatísticas)
@@ -86,7 +85,6 @@ Navbar · Hero · Estatísticas · Sobre · Conteúdos · Clipes (carrossel) · 
 - Next.js 15 (App Router, Server Components)
 - React 18 + TypeScript
 - TailwindCSS (paleta e tipografia customizadas em `tailwind.config.ts`)
-- Framer Motion (scroll reveals, hover 3D, loading screen)
 - lucide-react (ícones)
 
 ## Imagens

@@ -1,44 +1,30 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { CalendarDays, Clock } from "lucide-react";
 import { schedule } from "@/config/site";
+import { getSocial } from "@/config/socials";
 import SectionHeading from "@/components/ui/SectionHeading";
+import Button from "@/components/ui/Button";
 
 export default function Schedule() {
   return (
-    <section id="agenda" className="bg-background py-28">
-      <div className="mx-auto max-w-5xl px-6">
-        <SectionHeading eyebrow="Não perca" title="Agenda de Lives" />
+    <section id="agenda" className="bg-background py-20">
+      <div className="mx-auto max-w-6xl px-6">
+        <SectionHeading title="Agenda de Lives" />
 
-        <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {schedule.map((item, i) => (
-            <motion.div
-              key={item.day + item.date}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              whileHover={{ y: -6 }}
-              className="glass flex items-center gap-5 rounded-2xl p-6 shadow-deep transition-shadow hover:shadow-glow"
-            >
-              <div className="flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-xl bg-primary-gradient text-black">
-                <CalendarDays className="h-5 w-5" />
-                <span className="mt-1 font-display text-lg leading-none">{item.date}</span>
-              </div>
-
-              <div>
-                <p className="font-body text-xs uppercase tracking-[0.2em] text-primary">{item.day}</p>
-                <h3 className="font-display text-2xl uppercase tracking-wide text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-1 flex items-center gap-1.5 font-body text-sm text-muted">
-                  <Clock className="h-3.5 w-3.5" />
-                  {item.time}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+        <div className="mt-10 flex flex-col gap-6 rounded border border-line bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-display text-5xl text-primary">Todo dia, {schedule.time}</p>
+            <p className="mt-1 font-body text-foreground">{schedule.title}</p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {schedule.days.map((day) => (
+                <li
+                  key={day}
+                  className="rounded border border-line px-2.5 py-1 font-body text-xs text-muted"
+                >
+                  {day}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Button href={getSocial("twitch").url}>Seguir na Twitch</Button>
         </div>
       </div>
     </section>

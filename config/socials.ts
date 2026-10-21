@@ -29,7 +29,7 @@ export const socialLinks: SocialLink[] = [
   {
     key: "twitch",
     label: "Twitch",
-    url: "https://www.twitch.tv/jotajogadbd_",
+    url: "https://www.twitch.tv/jotajogadbd",
     icon: "Twitch",
     accent: "#9146FF",
   },
@@ -70,22 +70,16 @@ export const socialLinks: SocialLink[] = [
   },
 ];
 
-/** Botões de apoio/monetização — troque as URLs/valores reais aqui */
+/** Links de apoio — troque as URLs reais aqui */
 export const supportLinks = {
-  pix: {
-    label: "PIX",
-    description: "Apoie direto com uma chave PIX",
-    // Texto exibido no card (hoje aponta para o LivePix do canal)
-    pixKey: "https://livepix.gg/jotajogadbd",
-  },
   subs: {
     label: "Assinatura Twitch",
     description: "Vira sub e ganha emotes exclusivos",
-    url: "https://www.twitch.tv/subs/jotajogadbd_",
+    url: "https://www.twitch.tv/subs/jotajogadbd",
   },
   donation: {
-    label: "Doação",
-    description: "Contribua com qualquer valor via LivePix",
+    label: "PIX / Doação",
+    description: "Qualquer valor, via LivePix.",
     url: "https://livepix.gg/jotajogadbd",
   },
 };

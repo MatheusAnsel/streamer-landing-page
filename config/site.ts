@@ -13,12 +13,12 @@ export const siteConfig = {
   seo: {
     title: "JotaJogaDBD — Streamer de Dead by Daylight",
     description:
-      "Acompanhe jotajogadbd_ ao vivo jogando Dead by Daylight, todos os dias às 18h. Mais de 5 mil horas de jogo, SWF e parte da squad Beasts of Tomorrow.",
+      "Acompanhe o JotaJogaDBD ao vivo jogando Dead by Daylight, todos os dias às 12h. Mais de 6 mil horas de jogo, SWF e dono do Beasts of Tomorrow.",
     url: "https://streamer-landing-page-sigma.vercel.app",
     ogImage: "/og-image.jpg",
   },
   hero: {
-    ctaPrimary: { label: "Assistir Agora", href: "https://www.twitch.tv/jotajogadbd_" },
+    ctaPrimary: { label: "Assistir Agora", href: "https://www.twitch.tv/jotajogadbd" },
     ctaSecondary: { label: "Entrar no Discord", href: "https://discord.gg/v8reXhC" },
     streamerImage: "/photos/hero.png",
   },
@@ -61,13 +61,13 @@ export const contentCategories = [
   {
     title: "Lives",
     description: "Transmissões completas, direto da Entity.",
-    href: "https://www.twitch.tv/jotajogadbd_",
+    href: "https://www.twitch.tv/jotajogadbd",
     image: "/content/lives.jpg",
   },
   {
     title: "Clipes",
     description: "Os melhores momentos, cortados na hora.",
-    href: "https://www.twitch.tv/jotajogadbd_/videos?filter=highlights&sort=time",
+    href: "https://www.twitch.tv/jotajogadbd/clips?filter=clips&range=all",
     image: "/content/clipes.jpg",
   },
   {
@@ -79,7 +79,7 @@ export const contentCategories = [
   {
     title: "Melhores Momentos",
     description: "Jump scares, outplays e rage quits.",
-    href: "https://www.twitch.tv/jotajogadbd_/videos?filter=highlights&sort=time",
+    href: "https://www.twitch.tv/jotajogadbd/videos?filter=highlights&sort=time",
     image: "/content/melhores-momentos.jpg",
   },
 ];
@@ -106,16 +106,12 @@ export const clips = [
   },
 ];
 
-/** Seção Agenda — live diária real, todos os dias às 18h (categoria Dead by Daylight) */
-export const schedule = [
-  { day: "Segunda-feira", date: "18H", time: "Todos os dias", title: "Dead by Daylight ao vivo" },
-  { day: "Terça-feira", date: "18H", time: "Todos os dias", title: "Dead by Daylight ao vivo" },
-  { day: "Quarta-feira", date: "18H", time: "Todos os dias", title: "Dead by Daylight ao vivo" },
-  { day: "Quinta-feira", date: "18H", time: "Todos os dias", title: "Dead by Daylight ao vivo" },
-  { day: "Sexta-feira", date: "18H", time: "Todos os dias", title: "Dead by Daylight ao vivo" },
-  { day: "Sábado", date: "18H", time: "Todos os dias", title: "Dead by Daylight ao vivo" },
-  { day: "Domingo", date: "18H", time: "Todos os dias", title: "Dead by Daylight ao vivo" },
-];
+/** Seção Agenda — live diária, todos os dias às 12h (categoria Dead by Daylight) */
+export const schedule = {
+  time: "12h",
+  days: ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"],
+  title: "Dead by Daylight ao vivo",
+};
 
 /** Seção Reações — fotos reais do streamer usadas como galeria de reações/emotes */
 export const reactions = [
