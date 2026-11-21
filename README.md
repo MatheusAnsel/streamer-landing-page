@@ -2,7 +2,7 @@
 
 # JotaJogaDBD — Site Oficial
 
-**Projeto real, entregue a cliente**: landing page institucional para o streamer de Dead by Daylight **JotaJogaDBD**, construída em colaboração com Marina Barbs.
+**Projeto real para cliente**: landing page institucional para o streamer de Dead by Daylight **JotaJogaDBD**, construída em colaboração com Marina Barbs. O site está pronto e aguarda a entrega ao cliente.
 
 [![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=next.js&logoColor=white)](#)
 [![React](https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black)](#)
